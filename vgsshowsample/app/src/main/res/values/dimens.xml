@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+
+    <dimen name="card_item_width">324dp</dimen>
+    <dimen name="card_item_height">205dp</dimen>
+    <dimen name="card_item_width_float">324</dimen>
+    <dimen name="card_dimen_8">8dp</dimen>
+    <dimen name="card_margin_16">16dp</dimen>
+    <dimen name="card_dimen_14dp">14dp</dimen>
+    <dimen name="card_text_size_10">10sp</dimen>
+    <dimen name="card_size_4">4dp</dimen>
+    <dimen name="card_margin_30">30dp</dimen>
+    <dimen name="card_dimen_24">24dp</dimen>
+    <dimen name="card_margin_6">6dp</dimen>
+    <dimen name="card_dimen_10dp">10dp</dimen>
+    <dimen name="card_text_size_12">12sp</dimen>
+    <dimen name="card_text_size_16">16sp</dimen>
+    <dimen name="card_text_size_14">14sp</dimen>
+</resources>

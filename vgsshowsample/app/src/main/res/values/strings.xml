@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">vgs show sample</string>
+    <string name="vgs_organization_id">VGS Organization Id</string>
+    <string name="vgs_vault_id">VGS Vault Id</string>
+    <string name="card_id">Card Id</string>
+    <string name="show_token">Show Token</string>
+    <string name="get_secret">Get Secret</string>
+    <string name="cvv">CVV</string>
+    <string name="expDate">EXP Date</string>
+    <string name="environment">Environment</string>
+    <string name="sandbox">Sandbox</string>
+    <string name="production">Production</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="ok">Okay</string>
+</resources>
