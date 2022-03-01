@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ *********************************************************************
+  ~   Copyright @2021 Solidfi. Company
+  ~   You may obtain a copy of the License at https://www.solidfi.com
+  ~  *********************************************************************
+  ~
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/card_item_width"
+    android:layout_height="@dimen/card_item_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/ic_solid_card_front">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/card_margin_16"
+        android:layout_marginTop="@dimen/card_margin_16"
+        android:text="Virtual Card"
+        android:textColor="@color/white"
+        android:textSize="@dimen/card_text_size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.verygoodsecurity.vgsshow.widget.VGSTextView
+        android:id="@+id/cardNumberVGS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/card_margin_16"
+        android:layout_marginTop="@dimen/card_margin_30"
+        android:textSize="@dimen/card_text_size_16"
+        app:contentPath="cardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardType"
+        app:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/expiryLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_margin_16"
+        android:layout_marginTop="@dimen/card_dimen_10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumberVGS">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/expiryDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expDate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text_size_12" />
+
+        <LinearLayout
+            android:id="@+id/expiryDateVGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_size_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.verygoodsecurity.vgsshow.widget.VGSTextView
+                android:id="@+id/expiryMonthVGS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_text_size_12"
+                app:contentPath="expiryMonth"
+                app:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/slashTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_text_size_12" />
+
+            <com.verygoodsecurity.vgsshow.widget.VGSTextView
+                android:id="@+id/expiryYearVGS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_text_size_12"
+                app:contentPath="expiryYear"
+                app:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cvvLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_margin_30"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/expiryLayout"
+        app:layout_constraintStart_toEndOf="@+id/expiryLayout"
+        app:layout_constraintTop_toTopOf="@+id/expiryLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cvvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cvv"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text_size_12" />
+
+        <com.verygoodsecurity.vgsshow.widget.VGSTextView
+            android:id="@+id/cvvVGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_size_4"
+            android:textSize="@dimen/card_text_size_12"
+            app:contentPath="cvv"
+            app:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/card_margin_16"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Card"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text_size_12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_text_size_12" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
