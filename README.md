@@ -27,7 +27,7 @@ git clone https://github.com/solidfi/vgs-show-android.git
 
 In order to start the project we need below parameters. All fields are mandatory
 
-- VGSVaultID : Talk to our solutions team (solutions@solidfi.com) to get the ID via a secured method. (It will different base on sandbox and live)
+- VGS Vault ID : The VGS vault ID's required for implementing the sample code can be requested via a Solid help desk ticket.
 - CardID : Id of your card
 - ShowToken : You will get it from the "show_token" api from the backend
 - Environment :  Select live or sandbox environment
