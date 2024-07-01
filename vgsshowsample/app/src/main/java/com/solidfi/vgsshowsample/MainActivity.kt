@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         vgsShow.subscribe(binding.card.cvvVGS)
         vgsShow.setCustomHeader("sd-show-token", binding.showToken.text.toString().trim())
         val cardId = binding.cardId.text.toString().trim()
-        vgsShow.requestAsync("/v1/card/$cardId/show", VGSHttpMethod.GET)
+        vgsShow.requestAsync("/v2/card/$cardId/show", VGSHttpMethod.GET)
         vgsShow.addOnResponseListener(object : VGSOnResponseListener {
             override fun onResponse(response: VGSResponse) {
                 when (response) {
